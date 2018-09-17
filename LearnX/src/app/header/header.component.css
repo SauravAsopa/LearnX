@@ -1,10 +1,27 @@
-.fa.fa-navicon {
-  color:black;
+.fa {
+  color: white;
+  padding: 15px;
+  font-size: 25px;
 }
-.navbar{background:black;}
-.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+.fa:hover{
+  color: #d5d5d5;
+  text-decoration: none;
+}
+.container{
+  min-height: 72px;
+}
+.navbar-brand{
+  min-height: 55px;
+  padding: 0 10px 5px;
+}
+.logoImg{
+  height: 50px;
+  width: 100px;
+}
+.navbar{background:rgba(3, 3, 3, 0.938); opacity: 1;}
+.nav-item::after{content:'';display:block;width:0px;height:2px;background:white;transition: 0.2s;}
 .nav-item:hover::after{width:100%;}
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:white;}
 .nav-link{padding:15px 5px;transition:0.2s;}
 .dropdown-item.active, .dropdown-item:active{color:#212529;}
-.dropdown-item:focus, .dropdown-item:hover{background:#fec400;}
+.dropdown-item:focus, .dropdown-item:hover{background:white;}

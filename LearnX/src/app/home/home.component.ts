@@ -1,3 +1,5 @@
+import { ContentService } from './content.service';
+import { Content } from './../shared/content.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  content: Content[];
+  constructor(private contentService: ContentService) { }
 
   ngOnInit() {
+    this.content = this.contentService.getContent();
   }
+
+
 
 }

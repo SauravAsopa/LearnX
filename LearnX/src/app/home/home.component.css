@@ -1,0 +1,21 @@
+.landing-text{
+  height: 100%;
+  width: auto;
+  position: relative;
+  padding: 16px;
+  background-color: black;
+}
+.details{
+  margin-top: 30px;
+}
+.image{
+  margin-top: 50px;
+  height: 300px;
+  width: 300px;
+}
+h1{
+  color: white;
+}
+p{
+  color: honeydew;
+}
