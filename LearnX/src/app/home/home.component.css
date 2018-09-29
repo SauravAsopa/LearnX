@@ -1,9 +1,30 @@
+/*-----Media Queries --- */
+@media screen and (max-width : 500px){
+  .landing-text{
+    height: 50%;
+    width: 50%;
+    position: relative;
+    padding: 16px;
+    background-color: white;
+  }
+  .image{
+    width: 100%;
+
+  }
+  h1{
+    padding: 0 20px;
+
+  }
+}
+
+
+
 .landing-text{
   height: 100%;
-  width: auto;
+  width: 100%;
   position: relative;
   padding: 16px;
-  background-color: black;
+  background-color: white;
 }
 .details{
   margin-top: 30px;
@@ -14,8 +35,37 @@
   width: 300px;
 }
 h1{
-  color: white;
+  padding-top: 20px;
+  color:black;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 60px;
 }
 p{
-  color: honeydew;
+  color:black;
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 26px;
 }
+
+.btn-primary {
+  font-family: Raleway-SemiBold;
+  font-size: 15px;
+  color:black;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid black;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  float: right;
+  margin-right: 30px;
+}
+
+.btn-primary:hover{
+  background:black;
+  color: white;
+}
+

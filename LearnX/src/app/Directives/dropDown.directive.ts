@@ -9,7 +9,7 @@ export class DropDownDirective {
 
   constructor() {}
 
-@HostListener('mouseenter') toggleOpen(eventData: Event) {
+@HostListener('click') toggleOpen(eventData: Event) {
   this.isToggle = !this.isToggle;
 }
 }

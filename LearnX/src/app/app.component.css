@@ -1,3 +1,9 @@
+body{
+  background: url(../assets/bricks-brickwall-brickwork-1092364.jpg);
+  width: auto;
+  height: auto;
+}
 div{
   height: 600px;
 }
+
