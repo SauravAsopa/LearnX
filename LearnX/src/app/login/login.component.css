@@ -31,3 +31,16 @@ input[type="password"] {
 a{
   text-decoration: none;
 }
+
+label{
+  font-weight: bold;
+}
+
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+
+.help-block{
+color: red;
+font-size: 12px;
+}

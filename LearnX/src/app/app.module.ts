@@ -4,8 +4,9 @@ import { LoginService } from './services/login.service';
 import { DropDownDirective } from './Directives/dropDown.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
 // import { AngularFireModule } from "angularfire2";
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -38,7 +39,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     ContactUsComponent,
     SignUpComponent
   ],
-  imports: [BrowserModule, RouteModule, FormsModule],
+  imports: [BrowserModule, RouteModule, FormsModule, ReactiveFormsModule, HttpModule],
   providers: [ContentService, LoginService, AuthService],
   bootstrap: [AppComponent]
 })

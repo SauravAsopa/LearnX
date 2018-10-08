@@ -22,4 +22,9 @@ export class HomeComponent implements OnInit {
       this.showLogin = !this.showLogin;
     });
   }
+
+  onSaveData() {
+    this.contentService.saveContent(this.content);
+    this.contentService.getHttpContent();
+  }
 }

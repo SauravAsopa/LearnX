@@ -1,14 +1,48 @@
 <div class="wrapper">
-  <form action="" class="form-signIn" (ngSubmit)="onSignUp(f)" #f="ngForm">
+  <form action="" class="form-signUp" (ngSubmit)="onSignUp(f)" #f="ngForm">
+    <h2 class="form-signUp-heading">Sign Up</h2>
     <div class="form-group">
-      <h2 class="form-signIn-heading">Sign Up</h2>
-      <label for="username" style="align-content: left;">Username</label>
-      <input type="text" id="username" placeholder="Username" class="form-control" name="userName" ngModel>
+      <label for="firstName" class="control-label">First Name</label>
+      <div class="input-group">
+        <i class="fa fa-user fa" aria-hidden="true"></i>
+        <input type="text" class="form-control"
+        required id="firstName" placeholder="First Name" name="firstName" ngModel
+        #firstName="ngModel">
+      </div>
+       <span class="help-block" *ngIf="!firstName.valid && firstName.touched">Please enter First Name</span>
+    </div>
+    <div class="form-group">
+      <label for="lastName" class="control-label">Last Name</label>
+      <div class="input-group">
+        <i class="fa fa-user fa" aria-hidden="true"></i>
+        <input type="text" class="form-control" id="lastName"
+        required placeholder="Last Name" name="lastName" ngModel
+        #lastName="ngModel">
+      </div>
+      <span class="help-block" *ngIf="!lastName.valid && lastName.touched">Please enter Last Name</span>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <div class="input-group">
+        <i class="fa fa-envelope fa" aria-hidden="true"></i>
+        <input type="email" id="email" placeholder="Email"
+        required  class="form-control" name="email" ngModel
+        #email="ngModel">
+      </div>
+      <span class="help-block" *ngIf="!email.valid && email.touched">Please enter Email </span>
     </div>
     <div class="form-group">
       <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Password" class="form-control" name="password" ngModel>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+        <input type="password" id="password" placeholder="Password"
+        required minlength="6"class="form-control"
+        name="password" ngModel #password="ngModel">
+      </div>
+      <span class="help-block" *ngIf="!password.valid && password.touched">Please enter password</span>
     </div>
-    <button class="btn  btn-lg btn-block btn-primary" type="submit">Submit</button>
+    <button class="btn  btn-lg btn-block btn-primary"
+    type="submit" [disabled]="!f.valid"
+    style="cursor: pointer">Submit</button>
   </form>
 </div>
